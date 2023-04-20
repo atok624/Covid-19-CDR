@@ -66,7 +66,7 @@ REACT
 
 ### Future Features <a name="key-features"></a>
 - **API Functionality**
-- **Events**
+- **Searchbar**
 
 <!-- LIVE DEMO -->
 
@@ -78,7 +78,7 @@ REACT
 <!-- LIVE DEMO -->
 
 ## 🚀 Project Presentation <a name="live-demo"></a>
-[Link to my Presentation](https://covid19cdr.netlify.app/)
+[Link to my Presentation](https://www.loom.com/share/e5649e3370da42a7866484a6cfaec50e/)
 
 
 
@@ -120,7 +120,7 @@ Example:
 
 ## Usage
 
-Install Dependency
+### Install Dependency
 
 ```
   npm install
@@ -132,7 +132,7 @@ Install Dependency
 npm run build
 ```
 
-Run in development mode (Port 3000)
+### Run in development mode (Port 3000)
 
 ```
   npm run start
