@@ -63,10 +63,11 @@ REACT
 <!-- Features -->
 
 ### Key Features <a name="key-features"></a>
-
-### Future Features <a name="key-features"></a>
 - **API Functionality**
 - **Searchbar**
+
+### Future Features <a name="key-features"></a>
+- **Work on the UI of the project**
 
 <!-- LIVE DEMO -->
 
