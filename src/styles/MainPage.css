@@ -103,7 +103,7 @@
 }
 
 .Info {
-  background-image: url("../images/download.jpg");
+  background-image: url("../images/CViruss.jpg");
   background-size: cover;
   background-position: center;
   margin: 70px 8px 4px 8px;
@@ -173,7 +173,7 @@
 
 .section {
   border: 2px solid #566cbd;
-  background-image: url("../images/images.jpg");
+  background-image: url("../images/CViruss.jpg");
   background-size: contain;
   background-position: center;
   padding: 10px;
@@ -192,6 +192,7 @@
 .arrow {
   text-align: end;
   align-self: end;
+  color: black;
   float: right;
   transition: all 0.3s ease;
 }

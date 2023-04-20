@@ -71,13 +71,16 @@ REACT
 <!-- LIVE DEMO -->
 
 ## 🚀 Live Demo <a name="live-demo"></a>
-[Live Demo](https://math-magician-5re0.onrender.com/)
-
-
+[Link to live Demo](https://covid19cdr.netlify.app/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-Access the the online version of my application with this link
+<!-- LIVE DEMO -->
+
+## 🚀 Project Presentation <a name="live-demo"></a>
+[Link to my Presentation](https://covid19cdr.netlify.app/)
+
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -98,11 +101,11 @@ Basic knowledge of:
 ### Setup
 If you have git installed, you can clone the code to your machine, or download a ZIP of all the files directly.
 
-[Download the ZIP from this location](https://codeload.github.com/atok624/maths_magicians/zip/refs/heads/master), or run the following [git](https://git-scm.com/downloads) command to clone the files to your machine:
+[Download the ZIP from this location](https://codeload.github.com/atok624/Covid-19-CDR/zip/refs/heads/dev), or run the following [git](https://git-scm.com/downloads) command to clone the files to your machine:
 
 ```sh
   cd my-folder
-  git clone git@github.com:atok624/maths-magician.git
+  git git@github.com:atok624/Covid-19-CDR.git
 ```
 
 <!--
@@ -164,16 +167,12 @@ To run tests, run the following command:
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<!-- FUTURE FEATURES -->
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
 <!-- CONTRIBUTING -->
 
 ## 🤝 Contributing <a name="contributing"></a>
 
 Contributions, issues, and feature requests are welcome!
-#### Feel free to check the [issues page](https://github.com/atok624/maths_magicians/issues).
+#### Feel free to check the [issues page](https://github.com/atok624/Covid-19-CDR/issues).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -193,6 +192,7 @@ I would like to thank the following :
 
 -   [ ] Microverse
 -   [ ] All the Patners I've had for Module.
+-   [ ] Nelson Sakwa on Behance
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
