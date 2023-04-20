@@ -1,4 +1,3 @@
-import axios from 'axios';
 import {
   fetchDataRequest,
   fetchDataSuccess,
@@ -8,13 +7,13 @@ import {
 const api = 'https://coronavirus.m.pipedream.net/';
 const getData = () => async (dispatch) => {
   dispatch(fetchDataRequest());
-  axios.get(api)
-    .then((response) => {
-      dispatch(fetchDataSuccess(response.data));
-    })
-    .catch((error) => {
-      dispatch(fetchDataError(error));
-    });
+  try {
+    const response = await fetch(api);
+    const data = await response.json();
+    dispatch(fetchDataSuccess(data));
+  } catch (error) {
+    dispatch(fetchDataError(error));
+  }
 };
 
 export default getData;
