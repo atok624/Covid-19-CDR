@@ -128,7 +128,7 @@ const Home = () => {
         </i>
         <p className="covid-19-report">
           <FontAwesomeIcon icon={faVirusCovid} />
-          COVID-19 REPORT
+          COVID-19 CDR
         </p>
         <span className="searchBar">
           <input
