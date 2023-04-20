@@ -1,0 +1,88 @@
+.span-item {
+  border: 2px solid #12346d;
+  padding: 20px 10px;
+  background-image: url("../images/banner.jpg");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  height: 200px;
+}
+
+.details-row {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 8px;
+  padding: 4px 8px;
+}
+
+.Country {
+  grid-column: 1 / -1;
+}
+
+.span-item > p {
+  font-weight: 600;
+  margin: 0;
+  font-size: 1rem;
+}
+
+.location {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+.incident-text,
+.confirmed-text,
+.death-text,
+.ratio-text {
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
+.incident-details,
+.cases-details,
+.deaths-details,
+.ratio-details {
+  color: white;
+}
+
+.header {
+  display: flex;
+  color: black;
+  align-items: center;
+}
+
+.header > p {
+  margin: 0 10px;
+}
+
+.details-wrap {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+@media only screen and (min-width: 600px) {
+  .details-row {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .Country {
+    grid-column: 1 / -1;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .details-row {
+    grid-template-columns: repeat(4, 1fr);
+    padding: 24px;
+  }
+
+  .Country {
+    grid-column: 1 / -1;
+  }
+}

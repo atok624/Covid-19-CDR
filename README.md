@@ -31,7 +31,7 @@
 
 # 📖 COVID-19_CDR<a name="about-project"></a>
 
-**Maths Magician** 
+**COVID-19-CDR** 
 - "COVID-19-CDR" provides real-time statistics on COVID-19 cases, deaths, and recoveries by country. User-friendly interface with interactive charts and additional resources. Open source, contributions welcome. Stay informed and fight the spread of COVID-19.
 
 ## 🛠 Built With <a name="built-with"></a>
