@@ -1,15 +1,7 @@
-import { Outlet, useLocation } from 'react-router-dom';
-import Navigation from './features/Navigation/navigation';
+import Home from './components/Home';
 
 function App() {
-  const location = useLocation();
-  console.log(location.pathname);
-  return (
-    <div className="App">
-      {location.pathname !== '/' && <Navigation />}
-      <Outlet />
-    </div>
-  );
+  return <Home />;
 }
 
 export default App;

@@ -1,0 +1,304 @@
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #566cbd;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: white;
+}
+
+.home {
+  scroll-behavior: smooth;
+  overflow: scroll;
+}
+
+.second {
+  display: none;
+}
+
+.navbar {
+  border-bottom: 2px solid white;
+  background-color: black;
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  align-items: center;
+  padding: 20px 20px;
+  justify-content: space-between;
+  z-index: 5;
+}
+
+.logo {
+  display: none;
+}
+
+.goBack {
+  display: none;
+  transition: all 100ms ease;
+}
+
+.goBack:hover {
+  transform: translateX(-4px);
+}
+
+.home::-webkit-scrollbar {
+  display: none;
+}
+
+.covid-19-report > *:first-child {
+  margin: 0 10px;
+  color: grey;
+  transition: all 0.5s ease;
+}
+
+.covid-19-report > *:first-child:hover {
+  animation: pulse 1s infinite;
+}
+
+.navbar > *:nth-child(4):hover {
+  transition: all 0.8s ease;
+  transform: rotateZ(180deg);
+}
+
+.covid-19-report {
+  padding: 0;
+  margin: 0;
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+
+.searchBar {
+  padding-left: 10px;
+  align-items: center;
+  position: relative;
+}
+
+.searchBar > input {
+  border: 2px solid white;
+  background-color: rgba(0, 0, 0, 0);
+  width: 120px;
+  padding: 0.6rem 1.5rem;
+  border-radius: 1.2rem;
+  transition: all 0.4s ease;
+  color: grey;
+}
+
+.searchBar > input::placeholder {
+  color: grey;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+}
+
+.search-icon {
+  position: absolute;
+  color: grey;
+  top: 8px;
+  right: 16px;
+  pointer-events: none;
+}
+
+.Info {
+  background-image: url("../images/download.jpg");
+  background-size: cover;
+  background-position: center;
+  margin: 70px 8px 4px 8px;
+  padding: 10px 20px;
+  position: relative;
+}
+
+.Info::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 50, 73, 0.6);
+  background-image: url(../images/world.svg);
+  background-size: contain;
+  filter: brightness(0.4);
+}
+
+.Info-Wrapper {
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+  margin-top: 10px;
+  flex-wrap: wrap;
+}
+
+.global,
+.confirmed-text-home,
+.deaths-text {
+  position: relative;
+}
+
+.global {
+  font-size: 1.8rem;
+  display: block;
+  text-align: center;
+  color: black;
+}
+
+.confirmed-text-home,
+.deaths-text {
+  font-weight: 700;
+  color: black;
+}
+
+.confirmed,
+.deaths {
+  color: white;
+  font-weight: 600;
+  margin: 0;
+}
+
+.Info > p {
+  margin: 1px;
+  padding: 0;
+}
+
+.second-row {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  box-sizing: border-box;
+  gap: 8px;
+  padding: 4px 8px;
+}
+
+.section {
+  border: 2px solid #566cbd;
+  background-image: url("../images/images.jpg");
+  background-size: contain;
+  background-position: center;
+  padding: 10px;
+  position: relative;
+  border-radius: 0;
+  outline: none;
+  transition: all 0.3s ease;
+  color: white;
+  height: 200px;
+}
+
+.section:focus {
+  outline: none;
+}
+
+.arrow {
+  text-align: end;
+  align-self: end;
+  float: right;
+  transition: all 0.3s ease;
+}
+
+.arrow:hover {
+  transform: translateX(6px);
+}
+
+.section > p {
+  margin: 0;
+  padding: 0;
+}
+
+.section > p:first-child {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #a6d8e9;
+}
+
+.country-section-text {
+  color: black;
+  font-weight: 900;
+}
+
+.cases {
+  font-size: 0.875rem;
+  color: white;
+  font-weight: 700;
+}
+
+@media screen and (min-width: 450px) {
+  p {
+    font-size: 0.875rem;
+  }
+
+  .second {
+    display: flex;
+  }
+
+  .searchBar > input {
+    width: 220px;
+  }
+
+  .second-row {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .searchBar {
+    opacity: 1;
+  }
+}
+
+@media screen and (min-width: 890px) {
+  .navbar {
+    border: none;
+  }
+
+  .second {
+    display: flex;
+  }
+
+  .logo {
+    display: block;
+    font-size: 2rem;
+  }
+
+  .searchBar > input {
+    width: 250px;
+  }
+
+  .country-section-text {
+    color: black;
+    font-weight: 900;
+    font-size: 1.7rem;
+  }
+
+  .cases {
+    font-size: 1.7rem;
+    color: white;
+    font-weight: 700;
+  }
+
+  .global {
+    font-size: 2.4rem;
+  }
+
+  .confirmed-text-home,
+  .deaths-text {
+    font-size: 1.7rem;
+  }
+
+  .Info {
+    padding: 10px 6rem;
+  }
+
+  .confirmed,
+  .deaths {
+    font-size: 1.2rem;
+  }
+
+  p,
+  .cases,
+  .arrow {
+    font-size: 1.2rem;
+  }
+
+  .second-row {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
