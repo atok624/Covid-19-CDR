@@ -120,16 +120,22 @@ Example:
 
 ## Usage
 
-Run in development mode (Port 3000)
+Install Dependency
 
 ```
-  npm run start
+  npm install
 ```
 
 ### Build for production
 
 ```
 npm run build
+```
+
+Run in development mode (Port 3000)
+
+```
+  npm run start
 ```
 
 ### Run tests
