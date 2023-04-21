@@ -1,5 +1,5 @@
 import '../styles/MainPage.css';
-import React, { useEffect, useRef, useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import {
   faArrowRight,
 } from '@fortawesome/free-solid-svg-icons';
@@ -10,11 +10,8 @@ import PropTypes from 'prop-types';
 
 import { useDispatch, useSelector } from 'react-redux';
 import GetData from '../redux/Home-Api/HomeAPI';
-// import Component from './Details';
-import { setDetails } from '../redux/Home-Api/HomeSlice';
 
 const Section = ({ country, cases }) => {
-  // const dispatch = useDispatch();
   const navigate = useNavigate();
   function handleClick() {
     navigate(`details/${country}`);
@@ -35,8 +32,7 @@ const Section = ({ country, cases }) => {
 const Home = () => {
   const dispatch = useDispatch();
   const { data, state } = useSelector((store) => store.Home);
-  const [searchData, setSearchData] = useState('');
-  const arrowBack = useRef(null);
+  const [searchData] = useState('');
 
   useEffect(() => {
     if (data.length < 1) {
@@ -44,30 +40,25 @@ const Home = () => {
     }
   }, [dispatch, data]);
 
-  function handleArrowBack() {
-    dispatch(setDetails(null));
-    arrowBack.current.style.display = 'none';
-  }
-
   let content;
-
   if (state === 'Success') {
-    const filteredData = data.rawData.filter((item) => item.Country_Region.toLowerCase()
-      .includes(searchData.toLowerCase()));
-
     content = (
       <div className="second-row">
-        {filteredData.slice(0, 700).map((item, index) => (
-          <Section
-            key={uuidv4()}
-            index={index}
-            country={item.Combined_Key}
-            cases={item.Confirmed}
-          />
-        ))}
+        {data.rawData
+          .slice(0, 700)
+          .filter((x) => x.Country_Region.toLowerCase().includes(searchData.toLowerCase()))
+          .map((item, index) => (
+            <Section
+              key={uuidv4()}
+              index={index}
+              country={item.Combined_Key}
+              cases={item.Confirmed}
+            />
+          ))}
       </div>
     );
   }
+  console.log(searchData);
 
   return (
     <div className="home">

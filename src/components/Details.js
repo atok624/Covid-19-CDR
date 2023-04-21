@@ -36,45 +36,48 @@ const Details = (
                 .slice(0, 10)}
               )
             </h2>
-            <span className="span-item">
-              <span className="header">
-                <i className="icon-wrapper">
-                  <FontAwesomeIcon icon={faMaskFace} />
-                </i>
-                <p className="incident-text">INCIDENT</p>
+            <div className="details-row">
+              <span className="span-item">
+                <span className="header">
+                  <i className="icon-wrapper">
+                    <FontAwesomeIcon icon={faMaskFace} />
+                  </i>
+                  <p className="incident-text">INCIDENT</p>
+                </span>
+                <p className="incident-details">{countryDetails.Incident_Rate}</p>
               </span>
-              <p className="incident-details">{countryDetails.Incident_Rate}</p>
-            </span>
 
-            <span className="span-item">
-              <span className="header">
-                <i className="icon-wrapper">
-                  <FontAwesomeIcon icon={faPeopleGroup} />
-                </i>
-                <p className="confirmed-text">CONFIRMED</p>
+              <span className="span-item">
+                <span className="header">
+                  <i className="icon-wrapper">
+                    <FontAwesomeIcon icon={faPeopleGroup} />
+                  </i>
+                  <p className="confirmed-text">CONFIRMED</p>
+                </span>
+                <p className="cases-details">{countryDetails.Confirmed}</p>
               </span>
-              <p className="cases-details">{countryDetails.Confirmed}</p>
-            </span>
 
-            <span className="span-item">
-              <span className="header">
-                <i className="icon-wrapper">
-                  <FontAwesomeIcon icon={faSkull} />
-                </i>
-                <p className="death-text">DEATH(S)</p>
+              <span className="span-item">
+                <span className="header">
+                  <i className="icon-wrapper">
+                    <FontAwesomeIcon icon={faSkull} />
+                  </i>
+                  <p className="death-text">DEATH(S)</p>
+                </span>
+                <p className="deaths-details">{countryDetails.Deaths}</p>
               </span>
-              <p className="deaths-details">{countryDetails.Deaths}</p>
-            </span>
 
-            <span className="span-item">
-              <span className="header">
-                <i className="icon-wrapper">
-                  <FontAwesomeIcon icon={faChartSimple} />
-                </i>
-                <p className="ratio-text">RATIO</p>
+              <span className="span-item">
+                <span className="header">
+                  <i className="icon-wrapper">
+                    <FontAwesomeIcon icon={faChartSimple} />
+                  </i>
+                  <p className="ratio-text">RATIO</p>
+                </span>
+                <p className="ratio-details">{countryDetails.Incident_Rate}</p>
               </span>
-              <p className="ratio-details">{countryDetails.Incident_Rate}</p>
-            </span>
+            </div>
+
           </>
         )
       }
