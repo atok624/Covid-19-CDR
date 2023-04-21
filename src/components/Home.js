@@ -58,7 +58,6 @@ const Home = () => {
       </div>
     );
   }
-  console.log(searchData);
 
   return (
     <div className="home">
