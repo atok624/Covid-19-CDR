@@ -72,7 +72,7 @@ REACT
 <!-- LIVE DEMO -->
 
 ## 🚀 Live Demo <a name="live-demo"></a>
-[Link to live Demo](https://covid19cdr.netlify.app/)
+[Link to live Demo](https://fabulous-flan-79e33a.netlify.app/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
