@@ -198,7 +198,7 @@ If you like this project, please give it a star on the main page
 I would like to thank the following :
 
 - Microverse
-- All the Patners I've had for Module.
+- All the Patners I've had for the Module.
 - Nelson Sakwa on Behance
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
